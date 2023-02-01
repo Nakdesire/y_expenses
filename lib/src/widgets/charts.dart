@@ -8,7 +8,7 @@ class Charts extends StatelessWidget {
 
   final List<Transaction> recentTransactions;
 
-  List<Map<String, Object>> get groupedTransactions {
+  List<Map<String, dynamic>> get groupedTransactions {
     return List.generate(7, (index) {
       final weekDay = DateTime.now().subtract(Duration(days: index));
 
